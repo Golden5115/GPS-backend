@@ -21,6 +21,7 @@ EXPOSE 8082
 ENV PORT=8082
 
 # Start Traccar, overriding web.port via system property
-CMD java -Dweb.port=$PORT -jar tracker-server.jar conf/traccar.xml
+CMD sh -c "echo Starting Traccar on port $PORT && java -jar tracker-server.jar conf/traccar.xml"
+
 
 
