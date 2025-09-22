@@ -9,4 +9,12 @@
     <entry key='database.user'>sa</entry>
     <entry key='database.password'></entry>
 
+    <!-- Tell Traccar to use Render’s assigned port -->
+    <entry key='web.port'>${PORT}</entry>
+
+    <!-- Forwarding config -->
+    <entry key='forward.enable'>true</entry>
+    <entry key='forward.method'>post</entry>
+    <entry key='forward.type'>json</entry>
+
 </properties>

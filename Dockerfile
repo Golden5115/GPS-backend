@@ -22,3 +22,5 @@ ENV PORT=8082
 
 # Start Traccar, overriding web.port via system property
 CMD java -Dweb.port=$PORT -jar tracker-server.jar conf/traccar.xml
+
+
