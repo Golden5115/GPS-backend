@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: traccar-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    repo: # optional: leave empty to let dashboard configure, or fill "github.com/<user>/<repo>"
+    envVars:
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx512m"

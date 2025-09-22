@@ -1,0 +1,7 @@
+data
+logs
+*.zip
+*.exe
+node_modules
+.vscode
+.git
