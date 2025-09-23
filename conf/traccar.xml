@@ -12,7 +12,7 @@
 
 
     <!-- Tell Traccar to use Render’s assigned port -->
-    <entry key='web.port'>${PORT}</entry>
+    <entry key='web.port'>8082</entry>
 
     <!-- Forwarding config -->
     <entry key='forward.enable'>true</entry>
