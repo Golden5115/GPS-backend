@@ -8,10 +8,9 @@
     <entry key='database.url'>jdbc:h2:./data/database</entry>
     <entry key='database.user'>sa</entry>
     <entry key='database.password'></entry>
+
+    <!-- Default web config, will be overridden by -D flags -->
     <entry key='web.address'>0.0.0.0</entry>
-
-
-    <!-- Tell Traccar to use Render’s assigned port -->
     <entry key='web.port'>8082</entry>
 
     <!-- Forwarding config -->
