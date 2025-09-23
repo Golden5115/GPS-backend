@@ -15,15 +15,15 @@ COPY schema ./schema
 RUN mkdir -p /opt/traccar/logs
 
 # Expose web UI port (Render will inject $PORT)
-EXPOSE 8082
 
 # Default PORT environment
-ENV PORT=8082
+ENV PORT=10000
 
 # Start Traccar, overriding web.port via system property
 
 CMD echo "Render assigned port: $PORT" && \
     java -Dweb.port=$PORT -Dweb.address=0.0.0.0 -jar tracker-server.jar conf/traccar.xml
+
 
 
 
